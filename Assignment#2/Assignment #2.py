@@ -21,11 +21,15 @@ if choice == "yes":
     for i, row in Current_Employees.iterrows(): # Creating a loop for names output
         print(f"{i+1}. {row['Name']}")
 
-else :
+elif choice == "no":
     print("\nThank you for your time. Byee")
     sys.exit()
+else:
+    print("\nIncorrect value. Thank you for your time. Byee")
+    sys.exit()
 
-# Loop for the input question of the specific employee needed to be changed.
+
+# Loop for the input question of the specific employee needed to be changed.2
 loop_employee=0
 while loop_employee == 0:
     employee_choice = int(input("\nSelect an employee to update (number): ")) - 1
